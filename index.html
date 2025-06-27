@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Creamy</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Shrikhand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="img/BCO.a2e0bed3-99c6-454f-a967-6da8b0e74aaa.png" alt="">
+        <nav>
+            <a href="#">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#galeria">Mais vendidos</a>
+            <a href="#pedido">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <img src="img/Case-de-sucesso-Ice-Creamy-SULTS-Unidade-min-1.jpg" height="250px" alt="imagem da sorveteria">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/cCquUX2scBo?si=xWqHFeL0kWkOaFze" height="250px"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <p>A Ice Creamy nasceu da paixão por criar sorvetes artesanais que encantam o paladar. Cada sabor é uma
+                experiência feita com carinho e ingredientes selecionados.</p>
+        </section>
+
+        <section id="galeria">
+            <div class="caixa">
+                <h3>3 PISOS</h3>
+                <p>Sorvete de três andares — chantilly, chocolate e uma cereja no topo.</p>
+                <img src="img/images.jpg" height="200px" width="240px" alt="Sorvete 3 Pisos" class="sGaleria">
+            </div>
+            <div class="card">
+                <h3>5 TORRES</h3>
+                <p>Cinco bolas de sorvete com raspas, cereja e tubetes mergulhados no chocolate.</p>
+                <img src="img/tl.webp" height="200px" alt="Sorvete 5 Torres" class="sGaleria">
+            </div>
+        </section>
+
+        <section id="tabela-cardapio">
+            <h2>Tabela de Preços</h2>
+            <table class="tabela-precos">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sundae</td>
+                        <td>Delicioso sorvete com calda e chantilly</td>
+                        <td>R$ 13,90</td>
+                    </tr>
+                    <tr>
+                        <td>Milkshake</td>
+                        <td>Cremoso, com cobertura de chocolate</td>
+                        <td>R$ 15,90</td>
+                    </tr>
+                    <tr>
+                        <td>Casquinha</td>
+                        <td>Sorvete simples em cone crocante</td>
+                        <td>R$ 8,90</td>
+                    </tr>
+                    <tr>
+                        <td>3 Pisos</td>
+                        <td>Chantilly, chocolate e cereja</td>
+                        <td>R$ 12,90</td>
+                    </tr>
+                    <tr>
+                        <td>5 Torres</td>
+                        <td>Raspas, cerejas e tubetes cobertos por chocolates</td>
+                        <td>R$ 24,50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cardapio">
+            <h2>CARDÁPIO DA SEMANA</h2>
+            <div class="cardapio-cards">
+                <div class="produto">
+                    <img src="img/sundae.png" alt="Sundae">
+                    <h4>Sundae</h4>
+                    <p>R$ 13,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/milkshake.png" alt="Milkshake">
+                    <h4>Milkshake</h4>
+                    <p>R$ 15,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/casquinha.png" alt="Casquinha">
+                    <h4>Casquinha</h4>
+                    <p>R$ 8,90</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pedido">
+            <h2>Faça seu pedido</h2>
+            <form id="pedidoForm">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="tel" placeholder="Seu telefone" required>
+                <input type="text" placeholder="Seu endereço (bairro, rua, número...)">
+                <textarea placeholder="Digite seu pedido conforme o cardápio..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <script>
+                document.getElementById("pedidoForm").addEventListener("submit", function (event) {
+                    event.preventDefault(); // Impede o envio padrão do formulário
+                    window.location.href = "pedido.html"; // Redireciona para a página desejada
+                });
+            </script>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <p>© 2025 Ice Creamy — Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        window.addEventListener("load", () => {
+            document.body.classList.add("loaded");
+        });
+    </script>
+
+</body>
+
+
+
+</html>
