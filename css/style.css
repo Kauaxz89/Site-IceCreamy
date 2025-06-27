@@ -247,7 +247,7 @@ footer {
 @media (max-width: 768px) {
  
  body{
-  margin-top: 200px;
+  margin-top: 180px;
  }
 
   header {
@@ -265,9 +265,9 @@ footer {
 
   header nav {
     flex-direction: initial;
-    width: 100%;
+    width: 80%;
     gap: 10px;
-    align-items: flex-start;
+    align-items: flex-start; 
   }
 
   main {
@@ -280,9 +280,17 @@ footer {
     text-align: center;
   }
 
+#sobre img{
+  width: 350px;
+}
+
   #galeria {
     flex-direction: column;
     align-items: center;
+  }
+
+  #galeria img{
+    margin-left: 32px;
   }
 
   .caixa,
